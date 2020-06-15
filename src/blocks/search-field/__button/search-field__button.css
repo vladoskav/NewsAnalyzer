@@ -33,7 +33,7 @@
         padding: 15px 50px 15px 50px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .search-field__button {
         position: inherit;
     }

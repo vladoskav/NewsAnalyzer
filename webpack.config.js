@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDev = process.env.NODE_ENV === 'development';
 
-module.exports = {
+const config = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -21,9 +21,8 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.css$/,
-        use: [
-            MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        test: /\.css$/i,
+        use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader']
       },
       {
         test: /\.(png|jpg|gif|ico|svg)$/i,
@@ -64,13 +63,17 @@ module.exports = {
       canPrint: true
     }),
     new HtmlWebpackPlugin({
-      inject: false,
       template: './src/index.html',
       filename: 'index.html'
     }),
     new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
   ]
+};
+
+module.exports = (env, argv) => {
+    if (argv.mode === 'development') {
+        console.log('dev mode')
+    }
+    else {console.log('build mode') }
+    return config
 };

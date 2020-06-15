@@ -10,9 +10,10 @@
 @media screen and (max-width: 768px) {
     .search-block {
         padding: 40px 25% 48px 25%;
+        align-items: start;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .search-block {
         padding: 30px 16px 32px 16px;
     }
