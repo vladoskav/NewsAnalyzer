@@ -1,0 +1,10 @@
+@import url(./__description/not-found__description.css);
+@import url(./__title/not-found__title.css);
+.not-found {
+    background-color: #f5f6f7;
+    padding: 86px 0 80px 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

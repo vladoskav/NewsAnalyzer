@@ -41,6 +41,15 @@
             </section>
         </div>
         <main>
+            <section class="section-preloader">
+                <i class="circle-preloader"></i>
+                <p class="section-preloader__text">Идет поиск новостей...</p>
+            </section>
+            <section class="not-found">
+                <img alt="не найдено" src="<%=require('./images/notFound.svg')%>">
+                <h2 class="not-found__title">Ничего не найдено</h2>
+                <p class="not-found__description">К сожалению по вашему запросу ничего не найдено</p>
+            </section>
             <article class="about">
                 <div class="photo-wrapper">
                     <img src="<%=require('./images/author.jpg')%>"

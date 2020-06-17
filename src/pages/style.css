@@ -8,3 +8,6 @@
 @import url(../blocks/about/about.css);
 @import url(../blocks/photo-wrapper/photo-wrapper.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/section-preloader/section-preloader.css);
+@import url(../blocks/circle-preloader/circle-preloader.css);
+@import url(../blocks/not-found/not-found.css);
