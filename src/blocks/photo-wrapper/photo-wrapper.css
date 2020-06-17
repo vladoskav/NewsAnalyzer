@@ -1,20 +1,19 @@
 .photo-wrapper {
-    position: relative;
     width: 100%;
     max-width: 464px;
     margin-right: 56px;
-    padding-bottom: 100%;
 }
 @media screen and (max-width: 768px) {
     .photo-wrapper {
         margin-right: 32px;
         max-width: 232px;
+        max-height: 300px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
     .photo-wrapper {
         max-width: 272px;
-        padding-bottom: 75%;
+        margin-right: 0;
         margin-bottom: 24px;
     }
 }

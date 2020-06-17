@@ -40,20 +40,60 @@
                 </form>
             </section>
         </div>
-        <article class="about">
-            <div class="photo-wrapper">
-                <img src="<%=require('./images/author.png')%>" alt="Фото автора сайта" class="about__photo">
-            </div>
-            <div class="about__text-block">
-                <h2 class="about__title">Об авторе</h2>
-                <p class="about__description">
-                    Это блок с&nbsp;описанием автора проекта.
-                    Здесь следует указать, как вас зовут, чем вы&nbsp;занимаетесь, какими технологиями разработки владеете.
-                    &nbsp;Также можно рассказать о&nbsp;процессе обучения в&nbsp;Практикуме,
-                    чему вы&nbsp;тут научились, и&nbsp;чем можете помочь потенциальным заказчикам.
-                </p>
-            </div>
-        </article>
+        <main>
+            <article class="about">
+                <div class="photo-wrapper">
+                    <img src="<%=require('./images/author.jpg')%>"
+                         alt="Фото автора сайта" class="about__photo"
+                    >
+                </div>
+                <div class="about__text-block">
+                    <h2 class="about__title">Об авторе</h2>
+                    <p class="about__description">
+                        Это блок с&nbsp;описанием автора проекта.
+                        Здесь следует указать, как вас зовут, чем вы&nbsp;занимаетесь, какими технологиями разработки владеете.
+                        &nbsp;Также можно рассказать о&nbsp;процессе обучения в&nbsp;Практикуме,
+                        чему вы&nbsp;тут научились, и&nbsp;чем можете помочь потенциальным заказчикам.
+                    </p>
+                </div>
+            </article>
+            <footer class="footer">
+                <p class="footer__copyright">&copy; 2019 Supersite</p>
+                <nav class="footer__links">
+                    <ul class="footer__list">
+                        <li class="footer__list-element">
+                            <a class="footer__link">Главная</a>
+                        </li>
+                        <li class="footer__list-element">
+                            <a href="./about.html" class="footer__link">О проекте</a>
+                        </li>
+                        <li class="footer__list-element">
+                            <a target="_blank" class="footer__link"
+                               href="http://praktikum.yandex.ru/"
+                            >
+                                Яндекс.Практикум
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer__icons">
+                    <li class="footer__icons-element">
+                        <a href="https://github.com/vladoskav"
+                           target="_blank" class="footer__icon"
+                        >
+                           <img alt="Github лого" src="<%=require('./images/Github.svg')%>">
+                        </a>
+                    </li>
+                    <li class="footer__icons-element">
+                        <a href="vk.com/urbanan"
+                           target="_blank"
+                           class="footer__icon">
+                            <img alt="Facebook лого" src="<%=require('./images/Facebook.svg')%>">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
