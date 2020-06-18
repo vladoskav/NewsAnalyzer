@@ -1,0 +1,35 @@
+.results__button {
+    background: #fff;
+    border-radius: 80px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    border: 0;
+    max-width: 288px;
+    padding: 18px 84px 21px 82px;
+    color: #1a1b22;
+    transition: opacity .3s linear;
+    align-self: center;
+}
+.results__button:focus {
+    outline: none;
+}
+.results__button:hover {
+    opacity: 0.9;
+    transition: opacity .3s linear;
+}
+
+@media screen and (max-width: 768px) {
+    .results__button {
+        padding: 15px 60px 17px 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .results__button {
+        padding: 15px 84px 17px 84px;
+    }
+}

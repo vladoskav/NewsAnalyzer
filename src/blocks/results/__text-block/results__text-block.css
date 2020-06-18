@@ -1,0 +1,19 @@
+.results__text-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+    .results__text-block {
+        margin-bottom: 32px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .results__text-block {
+        flex-direction: column;
+        margin-bottom: 36px;
+
+    }
+}

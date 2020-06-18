@@ -11,3 +11,6 @@
 @import url(../blocks/section-preloader/section-preloader.css);
 @import url(../blocks/circle-preloader/circle-preloader.css);
 @import url(../blocks/not-found/not-found.css);
+@import url(../blocks/results/results.css);
+@import url(../blocks/cards-list/cards-list.css);
+@import url(../blocks/card/card.css);
