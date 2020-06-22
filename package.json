@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/vladoskav/NewsAnalyzer/issues"
   },
-  "homepage": "https://github.com/vladoskav/NewsAnalyzer#readme",
+  "homepage": "https://github.com/vladoskav/NewsAnalyzer",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
@@ -33,6 +33,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.21.2",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.9.0",

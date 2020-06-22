@@ -1,4 +1,5 @@
 @import url(./_active/header__element_active.css);
+@import url(./_about/header__element_about.css);
 .header__element {
     margin-right: 34px;
     padding-bottom: 26px;

@@ -8,7 +8,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const isDev = process.env.NODE_ENV === 'development';
 
 const config = {
-  entry: { main: './src/index.js' },
+  entry: {
+    main: './src/index.js',
+    about: './src/about.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
@@ -64,7 +67,13 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: 'about.html',
+      chunks: ['about']
     }),
     new WebpackMd5Hash(),
   ]
