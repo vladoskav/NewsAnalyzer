@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Анализатор популярности актуальных новостей">
+    <meta name="author" content="Владислав Князев">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.svg">
+    <title>NewsAnalyzer</title>
+    <link rel="stylesheet" href="style.792c01b3beb69d1368f9.css">
+<link href="style.792c01b3beb69d1368f9.css" rel="stylesheet"></head>
+<body>
+    <div class="page">
+        <div class="upper-block">
+            <header class="header">
+                <a class="header__logo" href="./index.html">NewsAnalyzer</a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__element header__element_active">
+                            <a class="header__link header__link_active">Главная</a>
+                        </li>
+                        <li class="header__element">
+                            <a class="header__link" href="./about.html">О проекте</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="search-block">
+                <h1 class="search-block__title">Что в мире &nbsp;творится?</h1>
+                <p class="search-block__description">
+                    Введите в&nbsp;поиске любую тему и&nbsp;узнайте,
+                    насколько популярной она была в&nbsp;новостях
+                    за&nbsp;прошедшую неделю.
+                </p>
+                <form class="search-field">
+                    <label>
+                        <input class="search-field__input" placeholder="Введите тему новости">
+                    </label>
+                    <button type="submit" class="search-field__button">Искать</button>
+                </form>
+            </section>
+        </div>
+        <main>
+            <section class="section-preloader">
+                <i class="circle-preloader"></i>
+                <p class="section-preloader__text">Идет поиск новостей...</p>
+            </section>
+            <section class="not-found">
+                <img alt="не найдено" src="img/notFound.svg">
+                <h2 class="not-found__title">Ничего не найдено</h2>
+                <p class="not-found__description">К сожалению по вашему запросу ничего не найдено</p>
+            </section>
+            <section class="results">
+                <div class="results__text-block">
+                    <h2 class="section-title results__title">Результаты поиска</h2>
+                    <a href="./analytics.html" class="results__link">Посмотреть аналитику</a>
+                </div>
+                <div class="cards-list">
+                    <div class="card">
+                        <img class="card__photo" alt="фото новости" src="img/card.jpg">
+                        <div class="card__text-block">
+                            <p class="card__date">2 августа, 2019</p>
+                            <h3 class="card__title">Национальное достояние - парки</h3>
+                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <p class="card__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__photo" alt="фото новости" src="img/card.jpg">
+                        <div class="card__text-block">
+                            <p class="card__date">2 августа, 2019</p>
+                            <h3 class="card__title">Национальное достояние - парки</h3>
+                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <p class="card__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__photo" alt="фото новости" src="img/card.jpg">
+                        <div class="card__text-block">
+                            <p class="card__date">2 августа, 2019</p>
+                            <h3 class="card__title">Национальное достояние - парки</h3>
+                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <p class="card__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__photo" alt="фото новости" src="img/card.jpg">
+                        <div class="card__text-block">
+                            <p class="card__date">2 августа, 2019</p>
+                            <h3 class="card__title">Национальное достояние - парки</h3>
+                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <p class="card__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__photo" alt="фото новости" src="img/card.jpg">
+                        <div class="card__text-block">
+                            <p class="card__date">2 августа, 2019</p>
+                            <h3 class="card__title">Национальное достояние - парки</h3>
+                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <p class="card__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__photo" alt="фото новости" src="img/card.jpg">
+                        <div class="card__text-block">
+                            <p class="card__date">2 августа, 2019</p>
+                            <h3 class="card__title">Национальное достояние - парки</h3>
+                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <p class="card__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="results__button" type="button">Показать еще</button>
+            </section>
+            <article class="about">
+                <div class="photo-wrapper">
+                    <img src="img/author.jpg"
+                         alt="Фото автора сайта" class="about__photo"
+                    >
+                </div>
+                <div class="about__text-block">
+                    <h2 class="section-title about__title">Об авторе</h2>
+                    <p class="about__description">
+                        Это блок с&nbsp;описанием автора проекта.
+                        Здесь следует указать, как вас зовут, чем вы&nbsp;занимаетесь, какими технологиями разработки владеете.
+                        &nbsp;Также можно рассказать о&nbsp;процессе обучения в&nbsp;Практикуме,
+                        чему вы&nbsp;тут научились, и&nbsp;чем можете помочь потенциальным заказчикам.
+                    </p>
+                </div>
+            </article>
+            <footer class="footer">
+                <p class="footer__copyright">&copy; 2019 Supersite</p>
+                <nav class="footer__links">
+                    <ul class="footer__list">
+                        <li class="footer__list-element">
+                            <a class="footer__link">Главная</a>
+                        </li>
+                        <li class="footer__list-element">
+                            <a href="./about.html" class="footer__link">О проекте</a>
+                        </li>
+                        <li class="footer__list-element">
+                            <a target="_blank" class="footer__link"
+                               href="http://praktikum.yandex.ru/"
+                            >
+                                Яндекс.Практикум
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer__icons">
+                    <li class="footer__icons-element">
+                        <a href="https://github.com/vladoskav"
+                           target="_blank" class="footer__icon"
+                        >
+                           <img alt="Github лого" src="img/Github.svg">
+                        </a>
+                    </li>
+                    <li class="footer__icons-element">
+                        <a href="vk.com/urbanan"
+                           target="_blank"
+                           class="footer__icon">
+                            <img alt="Facebook лого" src="img/Facebook.svg">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+<script type="text/javascript" src="main.192561c217fe5e1e0209.js"></script></body>
+</html>
