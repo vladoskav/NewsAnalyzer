@@ -1,0 +1,23 @@
+@import url(__cell/carousel__cell.css);
+.carousel {
+    position: relative;
+}
+.carousel:after {
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);    right: 0;
+    top: 0;
+}
+.carousel:before {
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);    left: 0;
+}
+.carousel:after, .carousel:before {
+    content: '';
+    width: 88px;
+    position: absolute;
+    z-index: 2;
+    height: 288px;
+}
+@media screen and (max-width: 768px) {
+    .carousel::after, .carousel::before {
+        display: none;
+    }
+}

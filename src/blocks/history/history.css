@@ -1,0 +1,28 @@
+@import url(__text-block/history__text-block.css);
+@import url(__swiper-slide/history__swiper-slide.css);
+@import url(__photo/history__photo.css);
+@import url(__date/history__date.css);
+@import url(__info-block/history__info-block.css);
+@import url(__upper-block/history__upper-block.css);
+@import url(__name/history__name.css);
+@import url(__email/history__email.css);
+@import url(__commit/history__commit.css);
+@import url(__title/history__title.css);
+@import url(__button/history__button.css);
+.history {
+    padding-top: 72px;
+    padding-bottom: 90px;
+    background-color: #f5f6f7;
+}
+@media screen and (max-width: 768px) {
+    .history {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .history {
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+}

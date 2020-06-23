@@ -5,11 +5,9 @@
 .results {
     padding: 80px 104px;
     background-color: #f5f6f7;
-    margin:0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 1440px;
     box-sizing: border-box;
 }
 

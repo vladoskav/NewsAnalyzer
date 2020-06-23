@@ -1,0 +1,12 @@
+.technologies__figure {
+    margin: 0 55px 0 0;
+}
+.technologies__figure:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 650px) {
+    .technologies__figure {
+        margin-right: 15px;
+        margin-bottom: 42px;
+    }
+}

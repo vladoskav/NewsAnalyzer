@@ -3,7 +3,7 @@
 .clients {
     padding: 80px 521px 94px 104px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .clients {
         padding: 30px 40px 26px 40px;
     }

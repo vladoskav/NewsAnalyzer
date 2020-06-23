@@ -1,0 +1,11 @@
+.technologies__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 13px;
+}
+@media screen and (max-width: 650px) {
+    .technologies__list {
+        flex-wrap: wrap;
+    }
+}
