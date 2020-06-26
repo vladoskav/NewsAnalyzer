@@ -7,7 +7,7 @@
     border: 1px solid transparent;
     top: 0;
     right:0;
-    cursor: pointer;
+    cursor: url("../../../images/Pointer.svg"), pointer;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;

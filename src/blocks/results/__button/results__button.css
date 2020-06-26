@@ -1,7 +1,7 @@
 .results__button {
     background: #fff;
     border-radius: 80px;
-    cursor: pointer;
+    cursor: url("../../../images/Pointer.svg"), pointer;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;

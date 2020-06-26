@@ -1,10 +1,11 @@
-.footer__link {
+.table__date {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     color: #1a1b22;
-    cursor: url("../../../images/Pointer.svg"), pointer;
-    text-decoration: none;
+    margin: 0;
+    width: 60px;
+    text-align: center;
 }

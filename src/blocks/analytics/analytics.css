@@ -1,0 +1,16 @@
+@import url(./__title/analytics__title.css);
+
+.analytics {
+    padding: 80px 104px;
+    background-color: #f5f6f7;
+}
+@media screen and (max-width: 768px) {
+    .analytics {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .analytics {
+        padding: 24px 16px 32px 16px;
+    }
+}

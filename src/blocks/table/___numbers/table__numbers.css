@@ -1,0 +1,11 @@
+.table__numbers {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-left: 110px;
+}
+@media screen and (max-width: 320px) {
+    .table__numbers {
+        display: none;
+    }
+}

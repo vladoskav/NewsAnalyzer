@@ -1,10 +1,9 @@
-.footer__link {
+.request__text {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #1a1b22;
-    cursor: url("../../../images/Pointer.svg"), pointer;
-    text-decoration: none;
+    color: #1A1B22;
+    margin: 0 0 4px 0;
 }

@@ -1,0 +1,5 @@
+.table__columns {
+    display: flex;
+    flex-direction: row;
+    height: 538px;
+}

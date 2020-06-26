@@ -1,0 +1,6 @@
+.table__params-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+}

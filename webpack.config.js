@@ -10,7 +10,8 @@ const isDev = process.env.NODE_ENV === 'development';
 const config = {
   entry: {
     main: './src/index.js',
-    about: './src/about.js'
+    about: './src/about.js',
+    analytics: './src/analytics.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -74,6 +75,11 @@ const config = {
       template: './src/about.html',
       filename: 'about.html',
       chunks: ['about']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/analytics.html',
+      filename: 'analytics.html',
+      chunks: ['analytics']
     }),
     new WebpackMd5Hash(),
   ]

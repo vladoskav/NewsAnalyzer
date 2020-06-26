@@ -7,6 +7,7 @@
     padding: 21px;
     max-width: 608px;
     width: 100%;
+    transition: 0.3s;
     color: #1A1B22;
 
 }
@@ -19,6 +20,8 @@
     color: #B6BCBF;
 }
 .search-field__input:focus {
+    transition: 0.3s;
+    box-shadow: 5px 6px 7px blue;
     outline: none;
 }
 @media screen and (max-width: 768px) {

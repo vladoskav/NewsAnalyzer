@@ -8,6 +8,8 @@
     text-decoration: none;
     text-align: center;
     align-self: center;
+    cursor: url("../../images/Pointer.svg"), pointer;
+
 }
 .section-link:after {
     content: url("../../images/arrow.svg");

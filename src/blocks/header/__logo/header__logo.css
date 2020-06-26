@@ -8,6 +8,8 @@
     color: #fff;
     text-decoration: none;
     padding-bottom: 26px;
+    cursor: url("../../../images/Pointer.svg"), pointer;
+
 }
 
 @media screen and (max-width: 768px) {
