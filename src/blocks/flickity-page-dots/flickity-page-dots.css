@@ -1,0 +1,5 @@
+@media screen and (max-width: 425px) {
+    .flickity-page-dots {
+        margin-bottom: 24px;
+    }
+}

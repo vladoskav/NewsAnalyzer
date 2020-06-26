@@ -11,4 +11,6 @@
 @import url(../blocks/history/history.css);
 @import url(~flickity/css/flickity.css);
 @import url(../blocks/carousel/carousel.css);
+@import url(../blocks/flickity-button/flickity-button.css);
+@import url(../blocks/flickity-page-dots/flickity-page-dots.css);
 

@@ -1,0 +1,20 @@
+.flickity-button {
+    position: absolute;
+    background: #1A1B22;
+    box-shadow: 0 3px 10px rgba(14, 26, 57, 0.2);  border: none;
+    color: #333;
+    z-index: 3;
+}
+.flickity-button:hover {
+    cursor: pointer;
+    background: black;
+}
+
+@media screen and (max-width: 768px) {
+    .flickity-button {
+        display: none;
+    }
+}
+.flickity-button-icon {
+    fill: white;
+}
