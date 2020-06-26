@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -86,9 +85,6 @@ const config = {
 };
 
 module.exports = (env, argv) => {
-    if (argv.mode === 'development') {
-        console.log('dev mode')
-    }
-    else {console.log('build mode') }
+
     return config
 };
