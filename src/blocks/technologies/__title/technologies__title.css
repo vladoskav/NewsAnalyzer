@@ -1,0 +1,15 @@
+.technologies__title {
+    margin-right: 194px;
+}
+@media screen and (max-width: 1280px) {
+    .technologies__title {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .technologies__title {
+        font-size: 30px;
+        line-height: 34px;
+        margin-right: 0;
+    }
+}

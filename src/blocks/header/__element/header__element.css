@@ -1,0 +1,23 @@
+@import url(./_active/header__element_active.css);
+@import url(./_about/header__element_about.css);
+.header__element {
+    margin-right: 34px;
+    padding-bottom: 26px;
+}
+.header__element:nth-child(2) {
+    margin-right: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    .header__element {
+        padding-bottom: 18px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .header__element {
+        padding-bottom: 16px;
+        margin-right: 11px;
+    }
+}
+

@@ -1,0 +1,38 @@
+.table__data-number {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2f71e5;
+    text-align: center;
+    padding: 6px;
+    margin: 0;
+}
+.table__data-number:nth-child(1) {
+    width: 15%;
+}
+.table__data-number:nth-child(2) {
+    width: 18%;
+
+}
+.table__data-number:nth-child(3) {
+    width: 11%;
+}
+.table__data-number:nth-child(4) {
+    width: 39%;
+}
+.table__data-number:nth-child(5) {
+    width: 45%;
+}
+.table__data-number:nth-child(6) {
+    width: 73%;
+}
+.table__data-number:nth-child(7) {
+    width: 34%;
+}

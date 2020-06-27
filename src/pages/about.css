@@ -1,0 +1,16 @@
+@import url(../vendor/fonts.css);
+@import url(../vendor/normalize.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/clients/clients.css);
+@import url(../blocks/technologies/technologies.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/photo-wrapper/photo-wrapper.css);
+@import url(../blocks/section-link/section-link.css);
+@import url(../blocks/history/history.css);
+@import url(~flickity/css/flickity.css);
+@import url(../blocks/carousel/carousel.css);
+@import url(../blocks/flickity-button/flickity-button.css);
+@import url(../blocks/flickity-page-dots/flickity-page-dots.css);
+

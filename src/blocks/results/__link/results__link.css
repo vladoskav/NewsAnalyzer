@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 425px) {
+    .results__link {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 320px) {
+    .results__link {
+        align-self: start;
+    }
+}

@@ -1,0 +1,5 @@
+.request__link.request__link_active {
+    color: #1a1b22;
+    cursor: url("../../../../images/Pointer.svg"), pointer;
+
+}

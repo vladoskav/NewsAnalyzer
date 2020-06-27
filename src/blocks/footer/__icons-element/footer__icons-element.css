@@ -1,0 +1,10 @@
+.footer__icons-element {
+    padding: 0;
+    margin-right: 28px;
+    cursor: url("../../../images/Pointer.svg"), pointer;
+
+}
+
+.footer__icons-element:last-child {
+    margin-right: 0;
+}

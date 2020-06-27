@@ -1,0 +1,21 @@
+.table__params-row {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #b6bcbf;
+    max-width: 150px;
+    text-align: start;
+    margin: 0 50px 0 0;
+    word-break: break-word;
+}
+.table__params-row:last-child {
+    margin-right: 0;
+}
+.table__params-row:nth-child(1) {
+    width: 60px;
+    height: 40px;
+}

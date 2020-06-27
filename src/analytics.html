@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Страница с аналитикой данных по новостям">
+    <meta name="author" content="Владислав Князев">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=require('./images/favicon.svg')%>">
+    <title>Аналитика</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+<body>
+    <div class="page">
+        <header class="header header_about">
+            <a class="header__logo header__logo_about" href="./index.html">NewsAnalyzer</a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__element">
+                        <a class="header__link header__link_analytics" href="./index.html">Главная</a>
+                    </li>
+                    <li class="header__element">
+                        <a class="header__link header__link_analytics" href="./about.html">О проекте</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="request">
+            <nav class="request__links">
+                <a href="index.html" class="request__link request__link_active">Главная /</a>
+                <a class="request__link">&nbsp;Аналитика</a>
+            </nav>
+                <h2 class="section-title request__title">Вы спросили: «Путешествия»</h2>
+                <div class="request__text-block">
+                    <p class="request__text">Новостей за неделю:</p>
+                    <span class="request__number">&nbsp;34 324</span>
+                </div>
+                <div class="request__text-block">
+                    <p class="request__text">Упоминаний в заголовках:</p>
+                    <span class="request__number">&nbsp;235</span>
+                </div>
+        </section>
+        <section class="analytics">
+            <h3 class="analytics__title">Аналитика по дням</h3>
+            <div class="table">
+                <div class="table__params">
+                    <p class="table__params-row">дата (август)</p>
+                    <p class="table__params-row">кол-во упоминаний</p>
+                </div>
+                <div class="table__numbers">
+                    <p class="table__number">0</p>
+                    <p class="table__number">25</p>
+                    <p class="table__number">50</p>
+                    <p class="table__number">75</p>
+                    <p class="table__number">100</p>
+                </div>
+                <div class="table__columns">
+                    <div class="table__params-column">
+                        <p class="table__date">19, пн</p>
+                        <p class="table__date">20, вт</p>
+                        <p class="table__date">21, ср</p>
+                        <p class="table__date">22, чт</p>
+                        <p class="table__date">23, пт</p>
+                        <p class="table__date">24, сб</p>
+                        <p class="table__date">25, вс</p>
+                    </div>
+                    <div class="table__data">
+                        <p class="table__data-number">15</p>
+                        <p class="table__data-number">18</p>
+                        <p class="table__data-number">11</p>
+                        <p class="table__data-number">39</p>
+                        <p class="table__data-number">45</p>
+                        <p class="table__data-number">73</p>
+                        <p class="table__data-number">34</p>
+                    </div>
+                </div>
+                <div class="table__numbers">
+                    <p class="table__number">0</p>
+                    <p class="table__number">25</p>
+                    <p class="table__number">50</p>
+                    <p class="table__number">75</p>
+                    <p class="table__number">100</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2019 Supersite</p>
+            <nav class="footer__links">
+                <ul class="footer__list">
+                    <li class="footer__list-element">
+                        <a class="footer__link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="footer__list-element">
+                        <a href="./about.html" class="footer__link">О проекте</a>
+                    </li>
+                    <li class="footer__list-element">
+                        <a target="_blank" class="footer__link"
+                           href="http://praktikum.yandex.ru/"
+                        >
+                            Яндекс.Практикум
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__icons">
+                <li class="footer__icons-element">
+                    <a href="https://github.com/vladoskav"
+                       target="_blank" class="footer__icon"
+                    >
+                        <img alt="Github лого" src="<%=require('./images/Github.svg')%>">
+                    </a>
+                </li>
+                <li class="footer__icons-element">
+                    <a href="https://vk.com/urbanan"
+                       target="_blank"
+                       class="footer__icon">
+                        <img alt="Facebook лого" src="<%=require('./images/Facebook.svg')%>">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

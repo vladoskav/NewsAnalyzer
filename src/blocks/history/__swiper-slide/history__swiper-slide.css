@@ -1,0 +1,23 @@
+.history__swiper-slide {
+    padding: 24px;
+    width: 500px;
+    border-radius: 16px;
+    background: #fff;
+    height: 288px;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: url("../../../images/Pointer.svg"), pointer;
+}
+@media screen and (max-width: 768px) {
+    .history__swiper-slide {
+        width: 336px;
+        height: 242px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .history__swiper-slide {
+        width: 288px;
+        height: 264px;
+        padding: 16px 12px 16px 16px;
+    }
+}

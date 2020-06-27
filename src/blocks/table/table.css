@@ -1,0 +1,13 @@
+@import url(./__params/table__params.css);
+@import url(./__params-row/table__params-row.css);
+@import url(./___numbers/table__numbers.css);
+@import url(./__number/table__number.css);
+@import url(./__params-column/table__params-column.css);
+@import url(./__date/table__date.css);
+@import url(./__columns/table__columns.css);
+@import url(./__data/table__data.css);
+@import url(./__data-number/table__data-number.css);
+.table {
+    width: 100%;
+    max-height: 100%;
+}

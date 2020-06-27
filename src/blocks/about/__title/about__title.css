@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 768px) {
+    .section-title.about__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .section-title.about__title {
+        margin-bottom: 16px;
+    }
+}

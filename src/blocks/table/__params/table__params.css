@@ -1,0 +1,12 @@
+.table__params {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    border-bottom: 1px solid #1a1b22;;
+}
+@media screen and (max-width: 320px) {
+    .table__params {
+        margin-bottom: 18px;
+    }
+}

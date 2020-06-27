@@ -1,0 +1,15 @@
+@import url(./__text/clients__text.css);
+@import url(./__title/clients__title.css);
+.clients {
+    padding: 80px 521px 94px 104px;
+}
+@media screen and (max-width: 1024px) {
+    .clients {
+        padding: 30px 40px 26px 40px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .clients {
+        padding: 16px;
+    }
+}

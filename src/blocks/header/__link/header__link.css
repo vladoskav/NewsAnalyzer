@@ -1,0 +1,19 @@
+@import url(./_active/header__link_active.css);
+@import url(./_about/header__link_about.css);
+@import url(./_analytics/header__link_analytics.css);
+.header__link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #b6bcbf;
+    transition: color .3s linear;
+    cursor: url("../../../images/Pointer.svg"), pointer;
+}
+@media screen and (max-width: 420px) {
+    .header__link {
+        font-size: 16px;
+    }
+}

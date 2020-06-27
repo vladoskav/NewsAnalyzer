@@ -1,0 +1,6 @@
+.request__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 80px;
+}
