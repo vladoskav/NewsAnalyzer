@@ -34,8 +34,9 @@
                 </p>
                 <form class="search-field">
                     <label>
-                        <input class="search-field__input" placeholder="Введите тему новости">
+                        <input class="search-field__input"  placeholder="Введите тему новости">
                     </label>
+                    <span class="search-field__error">«Нужно ввести ключевое слово»</span>
                     <button type="submit" class="search-field__button">Искать</button>
                 </form>
             </section>
@@ -56,60 +57,6 @@
                     <a href="./analytics.html" class="section-link results__link">Посмотреть аналитику</a>
                 </div>
                 <div class="cards-list">
-                    <div class="card">
-                        <img class="card__photo" alt="фото новости" src="<%=require('./images/card.jpg')%>">
-                        <div class="card__text-block">
-                            <p class="card__date">2 августа, 2019</p>
-                            <h3 class="card__title">Национальное достояние - парки</h3>
-                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <p class="card__source">ЛЕНТА.РУ</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__photo" alt="фото новости" src="<%=require('./images/card.jpg')%>">
-                        <div class="card__text-block">
-                            <p class="card__date">2 августа, 2019</p>
-                            <h3 class="card__title">Национальное достояние - парки</h3>
-                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <p class="card__source">ЛЕНТА.РУ</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__photo" alt="фото новости" src="<%=require('./images/card.jpg')%>">
-                        <div class="card__text-block">
-                            <p class="card__date">2 августа, 2019</p>
-                            <h3 class="card__title">Национальное достояние - парки</h3>
-                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <p class="card__source">ЛЕНТА.РУ</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__photo" alt="фото новости" src="<%=require('./images/card.jpg')%>">
-                        <div class="card__text-block">
-                            <p class="card__date">2 августа, 2019</p>
-                            <h3 class="card__title">Национальное достояние - парки</h3>
-                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <p class="card__source">ЛЕНТА.РУ</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__photo" alt="фото новости" src="<%=require('./images/card.jpg')%>">
-                        <div class="card__text-block">
-                            <p class="card__date">2 августа, 2019</p>
-                            <h3 class="card__title">Национальное достояние - парки</h3>
-                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <p class="card__source">ЛЕНТА.РУ</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__photo" alt="фото новости" src="<%=require('./images/card.jpg')%>">
-                        <div class="card__text-block">
-                            <p class="card__date">2 августа, 2019</p>
-                            <h3 class="card__title">Национальное достояние - парки</h3>
-                            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <p class="card__source">ЛЕНТА.РУ</p>
-                        </div>
-                    </div>
                 </div>
                 <button class="results__button" type="button">Показать еще</button>
             </section>
@@ -167,6 +114,5 @@
             </footer>
         </main>
     </div>
-    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

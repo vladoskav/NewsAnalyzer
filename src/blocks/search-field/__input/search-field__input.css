@@ -24,6 +24,7 @@
     box-shadow: 5px 6px 7px blue;
     outline: none;
 }
+
 @media screen and (max-width: 768px) {
     .search-field__input {
         padding: 17px;

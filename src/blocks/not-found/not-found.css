@@ -3,7 +3,7 @@
 .not-found {
     background-color: #f5f6f7;
     padding: 86px 0 80px 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
