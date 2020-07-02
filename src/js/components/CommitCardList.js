@@ -7,6 +7,6 @@ export class CommitCardList {
         card.forEach((item) => this.container.append(item));
     }
     render() {
-        this._addCard(this.massive.slice(0, 21));
+        this._addCard(this.massive.slice(-21));
     }
 }

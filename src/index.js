@@ -9,7 +9,7 @@ import {CardsList} from "./js/components/CardsList";
 import {NewsCard} from "./js/components/NewsCard";
 import {cardsContainer} from "./js/constants/constants";
 import {results} from "./js/constants/constants";
-import {setDate} from "./js/utils/setDate";
+import {utils} from "./js/utils/utils";
 import {showButton} from "./js/constants/constants";
 
 const newsApi = new NewsApi(ApiKey);
@@ -24,13 +24,18 @@ const sendForm = (event) => {
         .then((res) => {
             const cards = res.articles.map((card) =>
                 new NewsCard(card.source.name, card.title,
-                    setDate(card.publishedAt), card.description,
+                    utils(card.publishedAt), card.description,
                     card.urlToImage, card.source.name
                 ).card);
             localStorage.setItem('data', JSON.stringify(res));
             const cardsList = new CardsList(cardsContainer, cards, showButton);
             cardsList.render();
-        });
+        })
+        .catch(
+            err => {
+                notFound.style.display = "flex";
+                notFound.querySelector('h2').textContent = "Упс... произошла ошибка:"+" "+ err;
+            });
 };
 
 form.addEventListener("submit", sendForm);

@@ -1,6 +1,7 @@
 export class Statistics {
-    constructor(data) {
+    constructor(data, func) {
         this.data = data;
+        this.func = func;
         this.counter = {
             1: 0,
             2: 0,
@@ -26,23 +27,6 @@ export class Statistics {
     get numbers() {
         return this.counter
     }
-    _occurrence(string, substring) {
-        let counter = 0;
-        let sub = substring.toLowerCase();
-        let str = string.toLowerCase();
-        let arr = [];
-        let index = -1;
-
-        do {
-            index = str.indexOf(sub, index + 1);
-            if (index !== -1) {
-                arr[counter++] = index;
-                let i = index;
-            }
-        } while (index !== -1);
-
-        return counter;
-    }
     weekDay() {
         this.data.forEach((card) => {
             this.days[new Date(card.publishedAt).getDay()] = new Date(card.publishedAt).toLocaleDateString('ru-Latn', {day: "numeric", weekday: "short"});
@@ -53,8 +37,8 @@ export class Statistics {
     dayCounts() {
         this.data.forEach((card) => {
 
-            const title = this._occurrence(card.title, `${localStorage.getItem('query')}`);
-            const description =  this._occurrence(card.description, `${localStorage.getItem('query')}`);
+            const title = this.func(card.title, `${localStorage.getItem('query')}`);
+            const description =  this.func(card.description, `${localStorage.getItem('query')}`);
             const dayCounter = title + description;
             this.counter[new Date(card.publishedAt).getDay()] += dayCounter;
 
