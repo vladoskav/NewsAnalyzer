@@ -9,3 +9,8 @@ export const PAGE_SIZE = 3;
 export const request = document.querySelector('.request__title');
 export const newsPerWeek = document.querySelector('.request__number');
 export const queryPerTitles = document.querySelector('.request__number_two');
+export const currentMonth = document.querySelector('.table__params-row_month');
+export const week = document.querySelectorAll('.table__date');
+export const dayNumber = document.querySelectorAll('.table__data-number');
+export const gitURL = 'https://api.github.com/repos/vladoskav/NewsAnalyzer/commits';
+

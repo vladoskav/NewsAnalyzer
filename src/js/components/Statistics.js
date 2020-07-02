@@ -9,10 +9,24 @@ export class Statistics {
             5: 0,
             6: 0,
             0: 0
+        };
+        this.days = {
+            0: 0,
+            1: 0,
+            2: 0,
+            3: 0,
+            4: 0,
+            5: 0,
+            6: 0
         }
-
     }
-    occurrence(string, substring) {
+    get weekDays() {
+        return this.days;
+    }
+    get numbers() {
+        return this.counter
+    }
+    _occurrence(string, substring) {
         let counter = 0;
         let sub = substring.toLowerCase();
         let str = string.toLowerCase();
@@ -29,14 +43,21 @@ export class Statistics {
 
         return counter;
     }
+    weekDay() {
+        this.data.forEach((card) => {
+            this.days[new Date(card.publishedAt).getDay()] = new Date(card.publishedAt).toLocaleDateString('ru-Latn', {day: "numeric", weekday: "short"});
+
+        })
+
+    }
     dayCounts() {
         this.data.forEach((card) => {
 
-            const title = this.occurrence(card.title, `${localStorage.getItem('query')}`);
-            const description =  this.occurrence(card.description, `${localStorage.getItem('query')}`);
+            const title = this._occurrence(card.title, `${localStorage.getItem('query')}`);
+            const description =  this._occurrence(card.description, `${localStorage.getItem('query')}`);
             const dayCounter = title + description;
-            this.counter[new Date(card.publishedAt).getDay()] += dayCounter
-        });
-        debugger
+            this.counter[new Date(card.publishedAt).getDay()] += dayCounter;
+
+        })
     }
 }

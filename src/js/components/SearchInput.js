@@ -6,14 +6,14 @@ export class SearchInput {
         this.notFound = notFound;
         this.results = results;
     }
-    validate(text) {
+    _validate(text) {
         return text.length
     }
     submit() {
         const input = this.form.querySelector('.search-field__input');
         const error = this.form.querySelector('.search-field__error');
 
-        if (this.validate(input.value)) {
+        if (this._validate(input.value)) {
             this.loader.style.display = "flex";
 
           return this.callback(input.value)
